@@ -1,5 +1,43 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { supabase } from '../api/supabase';
+
+/**
+ * Puede usar el siguiente código para iniciar sesión con Supabase
+ * export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null); // Mensaje de éxito
+  const navigate = useNavigate(); // Para redirigir al usuario después de iniciar sesión
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+
+      if (error) {
+        setError(error.message); // Si hay error, mostrar el mensaje de error
+        setSuccessMessage(null); // Limpiar mensaje de éxito
+      } else {
+        setError(null); // Limpiar cualquier error
+        setSuccessMessage('Inicio de sesión exitoso. Redirigiendo...');
+
+        // Redirigir a la página principal después de iniciar sesión
+        setTimeout(() => {
+          navigate('/'); // O redirige a cualquier página deseada
+        }, 1500);
+      }
+    } catch (err) {
+      setError('Hubo un problema al iniciar sesión. Intenta de nuevo.');
+    }
+  };
+ */
+
 
 const Login = () => {
   const [username, setUsername] = useState('');
