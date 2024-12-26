@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { supabase } from '../api/supabase';
 
 /**
- * Puede usar el siguiente código para iniciar sesión con Supabase--
+ * Puede usar el siguiente código para iniciar sesión con Supabase
  * export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
